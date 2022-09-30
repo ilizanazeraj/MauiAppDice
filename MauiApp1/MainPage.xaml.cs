@@ -1,6 +1,17 @@
 ﻿using Plugin.Maui.Audio;
-
 namespace MauiApp1;
+/**
+ * Project: Dive Development App 
+ * Purpose Details: Get familiar with MAUI 
+ * Course: CMPSC 488
+ * Author: Iliza Nazeraj 
+ * Date Developed: 09/28/2022
+ * Last Date Changed: 09/29/2022
+ * Rev:1
+ */
+
+
+
 
 public partial class MainPage : ContentPage
 {
@@ -19,7 +30,6 @@ public partial class MainPage : ContentPage
 		count++;       
         // Generate a random number
         playerRandomNum = random.Next(1, 7);
-        string v = $" {playerRandomNum} ";
         Images.Source = ImageSource.FromFile($"dice{playerRandomNum}.png");
 
         // Text-speech number of total dice rolled
@@ -33,10 +43,7 @@ public partial class MainPage : ContentPage
         RollBtn.Text = $"You rolled  {count} times ";
         SemanticScreenReader.Announce(RollBtn.Text);
 
-        // 
-        TimeSpan vibrationLength = TimeSpan.FromSeconds(3);
-        Vibration.Default.Vibrate(vibrationLength);
-        Vibration.Default.Cancel();
+        
 
     }
 

@@ -11,11 +11,11 @@
             <Label
                 Text="Dice Game"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
+                FontSize="40"
                 HorizontalOptions="Center" />
             <Image
                 x:Name="Images"
-                Source="five.png"
+                Source="dice1.png"
                 HeightRequest="200"
                 HorizontalOptions="Center" 
                />
