@@ -5,21 +5,26 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
+            Spacing="15"
+            Padding="25,0"
             VerticalOptions="Center">
             <Label
                 Text="Dice Game"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="40"
+                FontSize="30"
                 HorizontalOptions="Center" />
+           
             <Image
                 x:Name="Images"
                 Source="dice1.png"
                 HeightRequest="200"
                 HorizontalOptions="Center" 
                />
-               
+            <Label
+                Text="Welcome to the Roll Dice Game!"
+                SemanticProperties.HeadingLevel="Level3"
+                FontSize="20"
+                HorizontalOptions="Center" />
             <Button
                  x:Name="CounterBtn"
                  Text="Roll Dice"
@@ -29,7 +34,7 @@
                                            />
             <Button
                 x:Name="RollBtn"
-                Text="Dice"
+                Text="Dice Roll Count"
                 SemanticProperties.Hint="Count the roll"
                 HorizontalOptions="Center"
                                            />
